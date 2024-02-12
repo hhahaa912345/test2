@@ -1,0 +1,78 @@
+button{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:burlywood;
+    color: yellow;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+#calculator{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:bisque;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: burlywood;
+     color:darkgoldenrod
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+button:hover{
+    background-color: chocolate;
+
+}
+#btn1{
+    background-color: cyan;
+}
+#btn1:hover{
+    background-color: aquamarine;
+}
+img{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+/* Thiết lập phần tử h1 */
+#myHeading {
+    position: fixed; /* Đặt vị trí cố định */
+    top: 0; /* Hiển thị ở dưới cùng */
+    left: 0; /* Hiển thị ở góc trái */
+    width: 100%; /* Chiều rộng 100% */
+    text-align: center; /* Canh giữa nội dung */
+    background-color: #fff; /* Màu nền */
+    padding: 20px; /* Khoảng cách với lề */
+    animation: moveright 5s linear infinite; /* Sử dụng animation fadeOut trong 5 giây với tốc độ linear và dừng lại ở cuối */
+}
+
+/* Định nghĩa animation fadeOut */
+@keyframes moveright {
+    0% {
+        left: 0; /* Khởi tạo vị trí ban đầu của phần tử */
+    }
+    100% {
+        left: calc(100% - 100px); /* Di chuyển phần tử đến vị trí cuối cùng */
+        opacity: 0; /* Đặt độ trong suốt là 0 để làm phần tử biến mất */
+    }
+}
